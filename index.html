@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WEBSITE MUA HÀNG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>WEBSITE MUA HÀNG</h1>
+
+    <img id="hinh" src="hinhanh/quan.jpeg" alt="Sản phẩm"><br>
+    <h2 id="ten">Quần</h2>
+    <p>Giá: <span id="gia">300000</span> VNĐ</p>
+
+    <p>
+        Chọn sản phẩm:
+        <select id="sanpham" onchange="doiSanPham()">
+            <option value="ao">Áo</option>
+            <option value="quan" selected>Quần</option>
+            <option value="giay">Giày</option>
+        </select>
+    </p>
+
+    <p>
+        Số lượng: 
+        <input type="number" id="soluong" value="2">
+    </p>
+
+    <button onclick="tinhTien()">Tính tiền</button>
+
+    <p id="ketqua"></p>
+
+    <hr>
+
+    <h2>Đổi màu giao diện</h2>
+    <button onclick="doiMau('aliceblue')">Xanh</button>
+    <button onclick="doiMau('mistyrose')">Hồng</button>
+    <button onclick="doiMau('lightyellow')">Vàng</button>
+
+    <hr>
+
+    <h2>Bảng giá</h2>
+    <button onclick="xemBangGia()">Xem bảng giá</button>
+    <div id="banggia"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
